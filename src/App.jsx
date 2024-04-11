@@ -1,18 +1,24 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="flex w-full">
-      <div className="card w-96 bg-base-100 shadow-xl mx-auto mt-8">
-        <div className="card-body">
-          <h2 className="card-title text-center">Vite + TailwindCSS + DaisyUI</h2>
-          <p>Are Installed and Ready</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Click Me!</button>
+    <>
+      <Navbar />
+      <div className="flex w-full">
+        <div className="card w-96 bg-base-100 shadow-xl mx-auto mt-8">
+          <div className="card-body items-center">
+            <h2 className="card-title mb-8">App.jsx</h2>
+            <p className="text-4xl">😊</p>
+            <div className="card-actions justify-center">
+              <button className="btn btn-primary rounded-full uppercase mt-4">
+                let's play!
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
